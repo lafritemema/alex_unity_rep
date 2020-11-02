@@ -1,0 +1,57 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System.Globalization;
+using System.Net;
+using System.Runtime.InteropServices;
+using UnityEngine;
+using UnityEngine.UI;
+
+public class instantiateScript : MonoBehaviour
+{
+    public List<GameObject> mesObjets = new List<GameObject>();
+    public GameObject monCube;
+    public GameObject prefabCube;
+    private GameObject Instance;
+    public Text listText;
+
+   // public GameObject naviguation;
+                                         
+    // Start is called before the first frame update
+    void start()
+    {
+    }
+public void cube()
+    {
+        
+        Instance = Instantiate(monCube);
+        mesObjets.Add(Instance);
+        listText.text = mesObjets.ToString();
+
+    }
+    void update()
+    {
+
+    }
+
+    public List<GameObject> getList()
+    {
+        return mesObjets;
+    }
+
+    public void instanceTest()
+    {
+        Instance = Instantiate(prefabCube);
+    }
+
+    /* void OnCollisionEnter(Collision other)
+     {
+         if (other.gameObject == true) { 
+         UnityEngine.Debug.Log("collision");
+
+     new Vector3(10.0f, 0.0f, -10.0f), Quaternion.identity
+         }
+     }*/
+
+
+}
