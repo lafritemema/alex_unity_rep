@@ -32,6 +32,9 @@ public class PlayerScript : MonoBehaviour
             canvas.SetActive(true);
             
         }
+        /* Cette condition sert à ouvrir le menu de l'utilisateur lorsque celui-ci appuie sur une touche */
+
+
 
      /*   if (OVRInput.GetDown(boutonFermeMenu, OVRInput.Controller.LTouch))
         {
@@ -46,22 +49,24 @@ public class PlayerScript : MonoBehaviour
     {
         canvas.SetActive(false);
     }
-
+    /* Cette fonction entre en jeu lorsque l'utilisateur appuie sur le bouton reprendre, il ferme l'affichage du menu */
 
     public void menuQuitter()
     {
         Application.Quit();
     }
-
+    /* Cette fonction servira lors de la version finale de l'application (sans passer par unity) et permettra de quitter l'application */
     public void menuBibli()
     {
         canvas.SetActive(false);
         canvasBibli.SetActive(true);
     }
-    
+    /* Cette fonction entre en jeu lorsque l'utilisateur appuie sur le bouton biblitohèque, il ouvre un nouveau menu qui permettra après implémentation de regrouper les différents objets de l'environnemnt */
+
     public void bibliRetour()
     {
         canvasBibli.SetActive(false);
         canvas.SetActive(true);
     }
+    /* Cette fonction entre en jeu lorsque l'utilisateur appuie sur le bouton retour une fois qu'il se trouve dans la bibliothèque, il le ramène au menu précédent */
 }

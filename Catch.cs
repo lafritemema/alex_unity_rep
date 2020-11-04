@@ -47,11 +47,12 @@ public class Catch : MonoBehaviour
             grab.grabbedObj.transform.position = new Vector3(rHand.x, firstYObject + 1, rHand.z + pullVelo);
 
         }
+        /*Cette condition permet de changer la velocité à laquelle arrive l'objet attrapé */
 
     }
 
-     
 
+    /*L'ensembe de cette fonction est difficile à doccumenter, la plupart de ces fonctions/paramètres sont amenés à changer. Je travaille en ce moment dessus et j'ai plusieurs tests à y effectuer. */
 
 }
 /*   

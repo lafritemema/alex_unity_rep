@@ -31,7 +31,8 @@ public class DistanceGrabberCustom : DistanceGrabber
             base.m_objectPullVelocity = value;
         }
     }
-    
+    /*Fonction get-set de l'objectPullVelocity venant de la super class distanceGrabber */
+
     public bool MoveToHand
     {
         get { return base.m_movingObjectToHand; }
@@ -40,17 +41,17 @@ public class DistanceGrabberCustom : DistanceGrabber
             base.m_movingObjectToHand = value;
         }
     }
-    
+    /*Fonction get-set du movingObjectToHand venant de la super class distanceGrabber */
     public OVRGrabbable grabbedObj
     {
         get { return base.m_grabbedObj; }
     }
-
+    /*Fonction get de m_grabbedObj,  renvoyant true lorsqu'aucun objet n'est attrapé, venant de la super class distanceGrabber */
     public bool isgrabbedObj
     {
         get { return base.m_grabbedObj != null; }
     }
-
+    /*Fonction get de m_grabbedObj, renvoyant true lorsqu'un objet est attrapé, venant de la super class distanceGrabber */
     /*  public void InfoPos()
       {
           UnityEngine.Debug.Log(transform.localPosition.x);

@@ -29,6 +29,7 @@ public void cube()
         listText.text = mesObjets.ToString();
 
     }
+    /* Cette fonction sert à instancier un gameobject passer en paramètre. Tout les gamesObject ainsi créer sont ajoutés directement à une liste     */
     void update()
     {
 
@@ -38,12 +39,13 @@ public void cube()
     {
         return mesObjets;
     }
+    /*Cette fonction sert à récupérer la liste de gameObject instancier*/
 
-    public void instanceTest()
+   /* public void instanceTest()
     {
         Instance = Instantiate(prefabCube);
     }
-
+   */
     /* void OnCollisionEnter(Collision other)
      {
          if (other.gameObject == true) { 

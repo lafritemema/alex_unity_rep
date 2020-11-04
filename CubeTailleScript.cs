@@ -17,6 +17,8 @@ public class CubeTailleScript : MonoBehaviour
     void Update()
     {
         transform.localScale = new Vector3 (Xnumber, Ynumber, Znumber);
+        /*Cette ligne sert à changer le scale en x, y et z du cube désigné à l'aide des fonctions à la suite du programme*/
+
       //  transform.position = new Vector3 (Xpos, 0, Zpos);
 
     }
@@ -24,25 +26,33 @@ public class CubeTailleScript : MonoBehaviour
     {
         Xnumber = newXnumber;
     }
-
+    /*Cette fonction permet de changer la valeur de Xnumber
+     Elle prend en paramètre newXnumber qui est, dans l'application, la valeur que l'utilisateur donne au curseur X
+     */
     public void AdjustYnumber(float newYnumber)
     {
         Ynumber = newYnumber;
     }
-
+    /*Cette fonction permet de changer la valeur de Ynumber
+   Elle prend en paramètre newYnumber qui est, dans l'application, la valeur que l'utilisateur donne au curseur Y
+   */
     public void AdjustZnumber(float newZnumber)
     {
         Znumber = newZnumber;
     }
-
-  /*  public void AdjustXpos(float newXpos)
-    {
-        Xpos = newXpos;
-    }
-
-    public void AdjustZpos(float newZpos)
-    {
-        Xpos = newZpos;
-    }
+    /*Cette fonction permet de changer la valeur de Znumber
+  Elle prend en paramètre newZnumber qui est, dans l'application, la valeur que l'utilisateur donne au curseur Z
   */
+
+
+    /*  public void AdjustXpos(float newXpos)
+      {
+          Xpos = newXpos;
+      }
+
+      public void AdjustZpos(float newZpos)
+      {
+          Xpos = newZpos;
+      }
+    */
 }
