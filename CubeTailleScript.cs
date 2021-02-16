@@ -17,6 +17,7 @@ public class CubeTailleScript : MonoBehaviour
     void Update()
     {
         transform.localScale = new Vector3 (Xnumber, Ynumber, Znumber);
+       //Physics.gravity = new Vector3(0,0,0);
         /*Cette ligne sert à changer le scale en x, y et z du cube désigné à l'aide des fonctions à la suite du programme*/
 
       //  transform.position = new Vector3 (Xpos, 0, Zpos);

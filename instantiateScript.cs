@@ -14,9 +14,10 @@ public class instantiateScript : MonoBehaviour
     public GameObject prefabCube;
     private GameObject Instance;
     public Text listText;
+    public int sonmez;
 
-   // public GameObject naviguation;
-                                         
+    // public GameObject naviguation;
+
     // Start is called before the first frame update
     void start()
     {
@@ -38,6 +39,12 @@ public void cube()
     public List<GameObject> getList()
     {
         return mesObjets;
+    }
+
+    public void Sonmez()
+    {
+        sonmez = mesObjets.Count-1;
+        Instantiate(mesObjets[sonmez]);
     }
     /*Cette fonction sert à récupérer la liste de gameObject instancier*/
 

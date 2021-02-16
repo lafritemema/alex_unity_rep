@@ -21,7 +21,7 @@ namespace DistanceGrabberCustom
 public class DistanceGrabberCustom : DistanceGrabber
 {
 
-    protected Vector3 nvm;
+    protected Vector3 vec;
 
     public float ObjectPullVelocity
     {
@@ -62,7 +62,7 @@ public class DistanceGrabberCustom : DistanceGrabber
       protected override void Awake()
       {
           base.Awake();
-          nvm = new Vector3 (0, 0, transform.localPosition.z);
+          vec = new Vector3 (0, 0, transform.localPosition.z);
           m_anchorOffsetPosition = nvm;
 
       }
